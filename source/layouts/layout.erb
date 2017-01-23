@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Magic Loops" %></title>
+    <title><%= current_page.data.title || "Mozza: Virality is a science." %></title>
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -44,7 +44,7 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/contact.html" do %>
+              <% link_to "mailto:mx.braud@gmail.com" do %>
                 hire us
               <% end %>
             </li>

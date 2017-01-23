@@ -12,12 +12,11 @@ title: Mozza: Virality is a science.
     <div class="col-xs-12">
       <h1>Freshest recipes:</h1>
       <div class="slides">
-        <div class="slideWrapper">
-          <iframe src="//www.slideshare.net/slideshow/embed_code/key/kKK6rIq4yAy1oq" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
-        </div>
-        <div class="slideWrapper">
-          <iframe src="//www.slideshare.net/slideshow/embed_code/key/kKK6rIq4yAy1oq" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
-        </div>
+        <% data.slides.each do |slide| %>
+          <div class="slideWrapper">
+            <iframe src="//www.slideshare.net/slideshow/embed_code/key/<%=slide.id %> " width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
