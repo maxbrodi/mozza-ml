@@ -3,6 +3,8 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+
+
 .padded {
   padding-top: 8em;
   padding-bottom: 8em;
@@ -30,4 +32,22 @@
 .bg-purple {
   background: $purple;
   color: white;
+}
+
+
+h1{
+  font-family: $header-font;
+  font-size: $base-size;
+}
+
+.mainview{
+  margin-top: 11%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+@media screen and (max-width: 768px){
+  .mainview{
+    margin-top: 22%;
+  }
 }

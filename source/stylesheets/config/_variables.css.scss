@@ -2,9 +2,19 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Montserrat", "sans-serif";
+ @font-face {
+    font-family: faktpromedium;
+    src: url(faktmedium.woff);
+}
+
+ @font-face {
+    font-family: faktpronormal;
+    src: url(faktnormal.woff);
+}
+
+// @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+$base-font: "faktpronormal", "sans-serif";
+$header-font: "faktpromedium", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {

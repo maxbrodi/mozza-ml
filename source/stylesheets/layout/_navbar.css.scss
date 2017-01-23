@@ -44,16 +44,18 @@ $navbar-profile-border-width: 2px;
   border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
   min-height: 0;
   transition: background 0.4s ease;
+  border-bottom: solid 1px #f1f1f1;
 
   .navbar-nav > li > a,
   .navbar-nav > .open > a,
   .navbar-nav > li > a:focus,
   .navbar-nav > .open > a:focus {
     outline: none;
-    color: $navbar-color;
-    line-height: $navbar-height;
-    padding-top: $navbar-vertical-padding;
-    padding-bottom: $navbar-vertical-padding;
+    font-size: 18px;
+    color: black;
+    line-height: 50px;
+    padding-top: 11px;
+    padding-bottom: 5px;
     background-color: transparent;
     -webkit-transition: all 0.3s ease;
        -moz-transition: all 0.3s ease;
@@ -91,6 +93,7 @@ $navbar-profile-border-width: 2px;
 
   .navbar-brand img, .navbar-brand svg {
     height: $navbar-height;
+    width: 243%;
     padding: 0px;
   }
 
@@ -127,6 +130,26 @@ $navbar-profile-border-width: 2px;
     border-top: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
     z-index: -1;
+  }
+}
+
+#magictitle{
+  font-family: faktpromedium;
+  height: $navbar-height;
+  width: 200px;
+  margin-top: 8px;
+  p{
+    font-size: 24px;
+    line-height: 50px;
+    margin: 0;
+  }
+  img{
+    width: 7%;
+    padding-bottom: 1px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
 }
 
