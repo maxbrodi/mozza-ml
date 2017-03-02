@@ -115,23 +115,21 @@ $navbar-profile-border-width: 2px;
     border-radius: 0;
     margin-top: 10px;
   }
+}
 
-  .navbar-nav > li > .dropdown-menu:before{
-    position: absolute;
-    background: white;
-    height: 10px;
-    width: 10px;
-    content: "\00a0";
-    display: block;
-    left: 50%;
-    margin-left: -5px;
-    top: -5px;
-    transform: rotate(45deg);
-    border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-    z-index: -1;
+@media screen and (max-width: 768px){
+  .navbar-wagon{
+    .navbar-right{
+      position: absolute;
+      right: 10%;
+      top: -13%;
+    }
+    .navbar-collapse{
+      border-style: none;
+    }
   }
 }
+
 
 #magictitle{
   font-family: faktpromedium;
@@ -153,21 +151,3 @@ $navbar-profile-border-width: 2px;
   }
 }
 
-/* -------------------------------------
- * Navbar profile picture
- * ------------------------------------- */
-
-@media screen and (max-width: 768px) {
-  .navbar-wagon {
-    .navbar-brand img, .navbar-brand svg {
-      height: 50px;
-    }
-    .navbar-brand, .navbar-brand:hover
-     {
-      display: block;
-      color: $navbar-color;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
-}
