@@ -18,6 +18,21 @@
   }
 }
 
+canvas#particles {
+  width: 100vw;
+  display: block;
+  position: absolute;
+  top: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* Use this if u don't play with z-index,
+   * so yo can click through the canvas.
+  pointer-events: none;
+  opacity: .75;
+  */
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px){
   .slides{
     padding-right: 0;
