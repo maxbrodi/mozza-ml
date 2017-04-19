@@ -1,0 +1,14 @@
+#creds{
+  margin-bottom: 30px;
+  text-decoration: none;
+  img{
+    width: 145px;
+    opacity: 0.3;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+}
