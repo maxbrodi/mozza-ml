@@ -44,7 +44,7 @@
       },
       particle: {
         color: {
-          start: "#DDDDDD",/* toRGBA("#FF0000", '1.0'), */
+          start: "#C9FEE0",/* toRGBA("#FF0000", '1.0'), */
           stop: false /* toRGBA("#FF6161", '1.0') */
         },
         count: 35,

@@ -33,6 +33,33 @@ canvas#particles {
   z-index: -1;
 }
 
+#newsletter{
+  margin-bottom: 3em;
+}
+
+#wantmore{
+  margin-bottom: 10px;
+}
+
+#mc_embed_signup .mc-field-group input{
+  background-color: #f5f5f5;
+  border: 1px solid white;
+}
+
+#mc_embed_signup #getmozza {
+  background-color: #2ECC71;
+  margin-top: 3%;
+  &:hover{
+    background-color: #10F671;
+  }
+}
+
+
+label{
+  font-weight: normal;
+}
+
+
 @media screen and (max-width: 768px){
   .slides{
     padding-right: 0;
