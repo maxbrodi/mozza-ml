@@ -1,3 +1,45 @@
+.testimonial-holder{
+  margin-bottom: 2%;
+}
+
+.testimonial{
+  margin-bottom: 3%;
+  .bubble{
+    padding: 3% 4%;
+    border-radius: 11px;
+    margin-top: 3%;
+  }
+  .bubble-right{
+    margin-left: 30%;
+  }
+  .bubble-left{
+    margin-right: 30%;
+  }
+  .author{
+    font-size: 0.7em;
+    margin-top: 1%;
+    .position{
+      font-size: 0.9em;
+    }
+  }
+  .author-right{
+    text-align: right;
+  }
+  .author-left{
+    text-align: left;
+  }
+  #bubbleblue{
+    background-color: #C5EFF7;
+  }
+  #bubblegreen{
+    background-color: #C8F7C5;
+  }
+  #bubblepink{
+    background-color: #FDE3A7;
+  }
+}
+
+
 #creds{
   margin-bottom: 30px;
   text-decoration: none;
@@ -10,5 +52,15 @@
   }
   a{
     text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .testimonial{
+    margin-top: 7%;
+    .bubble{
+      padding: 5% 7%;
+    }
   }
 }
