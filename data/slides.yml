@@ -1,12 +1,12 @@
-- name: Houseparty
-  id: FqMRMWXNzwbfWn
-- name: Zenly
-  id: kKK6rIq4yAy1oq
-- name: Mobile Strategy
-  id: 9iHj7LBhspu0RG
-# - name: Road to a Great Product
-#   id: e0JkBSpogAT8il
-# - name: Mobile Growth Marketing
-#   id: 8hcWFIEqErCMXy
+- name: houseparty
+  url: "mozza_io/houseparty-the-golden-minute-mobile-growth-analysis"
+- name: zenly
+  url: "MaximeBraud/how-zenly-nailed-it-product-analysis"
+- name: mobilestrategy
+  url: "amontcoudiol/mobile-growth-best-strategies-tools-and-tactics"
+- name: roadtogreat
+  url: "MaximeBraud/road-to-a-great-product-methods-tools-and-hacks"
+- name: growthmarketing
+  url: "amontcoudiol/mobile-growth-marketing-strategy-hacks-tools"
 # - name: 12 Mobile Growth
 #   id: BQKDuHG1Nbcdre

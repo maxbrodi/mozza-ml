@@ -18,6 +18,21 @@
   }
 }
 
+.allsquares{
+  margin-top: 39px;
+}
+
+.square{
+  background-color: #e8e8e8;
+  background-image: image-url('slides/zenly.png');
+  background-size: 218px;
+  padding: 109px;
+  display: inline-block;
+  margin-right: 18px;
+  margin-bottom: 14px;
+  border-radius: 11px;
+}
+
 canvas#particles {
   width: 100vw;
   display: block;
@@ -39,6 +54,10 @@ canvas#particles {
 
 #wantmore{
   margin-bottom: 10px;
+}
+
+#explanation{
+  margin-top: -9px;
 }
 
 #mc_embed_signup .mc-field-group input{
