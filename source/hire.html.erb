@@ -2,18 +2,14 @@
 title: Mozza Growth Sprints
 ---
 
-<canvas id="particles"></canvas>
 <div class="mainview">
 	<div class="row">
 		<div class="col-xs-12 col-lg-8">
 			<h1>Mobile Growth is a science</h1>
-			<p>Mozza is a team of designers, growth marketers and data scientists passionate about mobile applications and Italian food. We help promising startups increase user growth exponentially, with a focus on user activation, user retention and virality. How do we do it? </p>
-			<p><span class="roundpoint">1</span>We run a Growth Audit of your app (product & marketing analysis, data crunching & user testing)</p>
-			<p><span class="roundpoint">2</span>We identify major growth opportunities and low-hanging fruits</p>
-			<p><span class="roundpoint">3</span>We help you craft a growth strategy and build a product as fresh as our mozzarella</p>
-			<p>In the last 3 years, we helped 20+ startups from the best accelerators.</p>
+			<p>Mozza is a team of designers, growth marketers and data scientists passionate about mobile applications and Italian food. We help promising startups increase user growth exponentially, with a focus on user activation, user retention and virality.</p>
+			<p>In the last 3 years, we helped 20+ startups from <span class="greylink" id="accelerators"><% link_to "#" do %>the best accelerators.<% end %></span></p>
 
-			<div id="creds">
+			<div class="slideToggle" id="creds">
 				<% link_to "http://www.ycombinator.com/", target: "_blank" do %>
 					<%= image_tag "yc.png" %>
 				<% end %>
@@ -29,76 +25,92 @@ title: Mozza Growth Sprints
 			</div>
 
 
-			<p>Want to work with us? <%= mail_to "hello@mozza.io", "Get in touch" %> :)</p>
-			<p>Founded by <% link_to "https://twitter.com/mxbraud", target: "_blank" do %>mxbraud<% end %> & <% link_to "https://twitter.com/adrienm", target: "_blank" do %>adrienm<% end %></p>
+			<p>Want to work with us?</p>
+			<p><%= mail_to "hello@mozza.io", "Get in touch :)" %></p>
 		</div>
 		<div class="col-xs-12 col-lg-8 testimonial-holder">
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-right" id="bubblegreen">
+				<div class="bubble bubble-right bubblegreen slideUp">
 					"If you’re building a social app, the Mozza team is the right one to help you improve your product and implement a successful growth strategy."
 				</div>
 				<div class="author author-right">
-					<div>Rhai Goburdhun</div>
-					<div class="position">CEO at Sounds (8 million users)</div>
+					<div class="testimonialgiver">
+						<div>Rhai Goburdhun</div>
+						<div class="position">CEO at Sounds (8 million users)</div>
+					</div>
+					<div class="testimonialpic"><%= image_tag "rhai.jpg" %></div>
 				</div>
 			</div>
 			<!-- End of estimonial -->
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-left" id="bubblepink">
-					"The Mozza team will help you design a better product and implement the right growth strategy for your mobile app."
+				<div class="bubble bubble-left bubblegrey slideUp">
+					"Mozza will help you design a better product and grow your userbase exponentially."
 				</div>
 				<div class="author author-left">
-					<div>Hamza Ouazzani Chahdi</div>
-					<div class="position">CEO at Spot Angels (YC)</div>
+					<div class="testimonialpic"><%= image_tag "hamza.jpg" %></div>
+					<div class="testimonialgiver">
+						<div>Hamza Ouazzani Chahdi</div>
+						<div class="position">CEO at Spot Angels (YC)</div>
+					</div>
 				</div>
 			</div>
 			<!-- End of estimonial -->
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-right" id="bubblegreen">
+				<div class="bubble bubble-right bubblegreen">
 					"Adrien and Maxime are the best Growth/Product duo I ever worked with."
 				</div>
 				<div class="author author-right">
+				<div class="testimonialgiver">
 					<div>Kevin Kuipers</div>
 					<div class="position">Founder Molotov.tv (1M users)</div>
 				</div>
+				<div class="testimonialpic"><%= image_tag "kevin.jpg" %></div>
 			</div>
 			<!-- End of estimonial -->
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-left" id="bubblepink">
+				<div class="bubble bubble-left bubblegrey">
 					"Regarding growth strategies of mobile apps, I think Adrien is among the best experts in Europe."
 				</div>
 				<div class="author author-left">
-					<div>Alexandre Jubien</div>
-					<div class="position">ex Head of mobile at Deezer</div>
+					<div class="testimonialpic"><%= image_tag "alexandre.jpg" %></div>
+					<div class="testimonialgiver">
+						<div>Alexandre Jubien</div>
+						<div class="position">ex Head of mobile at Deezer</div>
+					</div>
 				</div>
-			</div>
 			<!-- End of estimonial -->
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-right" id="bubblegreen">
+				<div class="bubble bubble-right bubblegreen">
 					"Pretty impressed by Maxime’s ability to form a relevant product strategy out of some intuitions we had!"
 				</div>
 				<div class="author author-right">
-					<div>Antoine Martin</div>
-					<div class="position">CEO Zenly (acquired by Snapchat)</div>
+					<div class="testimonialgiver">
+						<div>Antoine Martin</div>
+						<div class="position">CEO Zenly (acquired by Snapchat)</div>
+					</div>
+					<div class="testimonialpic"><%= image_tag "antoine.jpg" %></div>
 				</div>
 			</div>
 			<!-- End of estimonial -->
 			<!-- Testimonial -->
 			<div class="testimonial">
-				<div class="bubble bubble-left" id="bubblepink">
+				<div class="bubble bubble-left bubblegrey">
 					"Adrien did a great job reviewing our product & growth strategy. I highly recommend him."
 				</div>
 				<div class="author author-left">
-					<div>Paul Duan</div>
-					<div class="position">President at Bayes Impact (YC)</div>
-				</div>
+					<div class="testimonialpic"><%= image_tag "paul.jpg" %></div>
+					<div class="testimonialgiver">
+						<div>Paul Duan</div>
+						<div class="position">President at Bayes Impact (YC)</div>
+					</div>
 			</div>
 			<!-- End of estimonial -->
+			<p class="greylink" id="founded">Founded by <% link_to "https://twitter.com/mxbraud", target: "_blank" do %>mxbraud<% end %> & <% link_to "https://twitter.com/adrienm", target: "_blank" do %>adrienm<% end %></p>
 		</div>
 	</div>
 </div>
