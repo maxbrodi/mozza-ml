@@ -1,14 +1,18 @@
+- name: earlysnapchat
+  url: "https://fr.slideshare.net/mozza_io/growth-lessons-from-early-snapchat"
+- name: apppages
+  url: "http://www.pages.xyz/type/app"
 - name: gamification
-  url: "mozza_io/mobile-gamification-how-the-best-apps-nailed-it-waze-duolingo-tinder-snapchat-linkedin-zenly"
+  url: "https://fr.slideshare.net/mozza_io/mobile-gamification-how-the-best-apps-nailed-it-waze-duolingo-tinder-snapchat-linkedin-zenly"
 - name: houseparty
-  url: "mozza_io/houseparty-the-golden-minute-mobile-growth-analysis"
+  url: "https://fr.slideshare.net/mozza_io/houseparty-the-golden-minute-mobile-growth-analysis"
 - name: zenly
-  url: "MaximeBraud/how-zenly-nailed-it-product-analysis"
+  url: "https://fr.slideshare.net/MaximeBraud/how-zenly-nailed-it-product-analysis"
 - name: mobilestrategy
-  url: "amontcoudiol/mobile-growth-best-strategies-tools-and-tactics"
+  url: "https://fr.slideshare.net/amontcoudiol/mobile-growth-best-strategies-tools-and-tactics"
 - name: roadtogreat
-  url: "MaximeBraud/road-to-a-great-product-methods-tools-and-hacks"
+  url: "https://fr.slideshare.net/MaximeBraud/road-to-a-great-product-methods-tools-and-hacks"
 - name: growthmarketing
-  url: "amontcoudiol/mobile-growth-marketing-strategy-hacks-tools"
+  url: "https://fr.slideshare.net/amontcoudiol/mobile-growth-marketing-strategy-hacks-tools"
 # - name: 12 Mobile Growth
 #   id: BQKDuHG1Nbcdre

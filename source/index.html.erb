@@ -9,7 +9,7 @@
   <div class="row allsquares">
     <div class="col-xs-12">
       <% data.slides.each do |slide| %>
-        <% link_to "https://fr.slideshare.net/" + slide.url, target: "_blank" do %>
+        <% link_to slide.url, target: "_blank" do %>
           <div class="square" style="background-image: url(images/slides/<%= slide.name %>.png)"></div>
         <% end %>
       <% end %>
@@ -17,7 +17,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6" id="newsletter">
-      <div id="wantmore"><h2>Want more?</h2> Get some fresh mozza in your inbox:</div>
+      <div id="wantmore"><h2>Want more?</h2> Get some exclusive mozza in your inbox:</div>
               <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
       <style type="text/css">
