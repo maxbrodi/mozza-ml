@@ -1,7 +1,7 @@
 .testimonial-holder{
-  margin-bottom: 2%;
-  margin-top: 4%;
-}
+  margin: auto;
+  width: 72%;
+ }
 
 .testimonial{
   margin-bottom: 3%;
@@ -88,6 +88,10 @@
 
 
 @media screen and (max-width: 768px){
+  .testimonial-holder{
+  margin: auto;
+  width: 100%;
+  }
   .testimonial{
     margin-top: 7%;
     .bubble{
