@@ -11,48 +11,70 @@
   </div>
     <div class="row">
       <h1>Our services</h1>
-      <div class="col-xs-12 col-md-3 service">
-        <div class="servicetitle">Product & Growth Strategy</div>
-        <div class="servicedelivery">
-          <p><i class="fas fa-check"></i>Product & marketing analysis: review of screens, usability tests & metrics</p>
-          <p><i class="fas fa-check"></i>Recommendations on user experience</p>
-          <p><i class="fas fa-check"></i>Recommendations on growth marketing strategy</p>
-        </div>
-        <div class="serviceprice">
-          <% link_to "mailto:hello@mozza.io?subject=Product Growth Strategy" do %><div id="price">Start Now - 2900€</div><% end %>
-          <p id="satisfied">Satisfied or money back</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-3 service">
-        <div class="servicetitle">Product & Growth Strategy</div>
-        <div class="servicedescription">Increase acquisition, retention and virality</div>
-        <div class="servicedelivery">
-          <p><i class="fas fa-check"></i>Product & marketing analysis: review of screens, usability tests & metrics</p>
-          <p><i class="fas fa-check"></i>Recommendations on user experience</p>
-          <p><i class="fas fa-check"></i>Recommendations on growth marketing strategy</p>
-        </div>
-        <div class="serviceprice">
-          <p id="price">Contact us - 2900 euros</p>
-          <p id="satisfied">Satisfied or money back</p>
+      <div class="servicesholder col-xs-12 col-md-4 ">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround.png" %></div>
+          <div class="servicetitle">Product & Growth Strategy</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Product & marketing analysis: review of screens, usability tests & metrics</p>
+            <p><i class="fas fa-check"></i>Recommendations on user experience</p>
+            <p><i class="fas fa-check"></i>Recommendations on growth marketing strategy</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=Product Growth Strategy" do %><div class="price">Start Now - 2900€</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-3 service">
-        <div class="servicetitle">Product & Growth Strategy</div>
-        <div class="servicedescription">Increase acquisition, retention and virality</div>
-        <div class="servicedelivery">
-          <p><i class="fas fa-check"></i>Product & marketing analysis: review of screens, usability tests & metrics</p>
-          <p><i class="fas fa-check"></i>Recommendations on user experience</p>
-          <p><i class="fas fa-check"></i>Recommendations on growth marketing strategy</p>
+      <div class="servicesholder col-xs-12 col-md-4">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround2.png" %></div>
+          <div class="servicetitle">Activation Boost</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Analysis of first user experience: review of screens, usability tests & metrics</p>
+            <p><i class="fas fa-check"></i>Redesign of first user experience: UX Sketch files</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=Activation Boost" do %><div class="price">Start Now - 3500€</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
         </div>
-        <div class="serviceprice">
-          <p id="price">2900 euros</p>
-          <p id="satisfied">Satisfied or money back</p>
+      </div>
+      <div class="servicesholder col-xs-12 col-md-4">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround3.png" %></div>
+          <div class="servicetitle">New Feature Design</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Advice on the new feature implementation</p>
+            <p><i class="fas fa-check"></i>UX/UI design of the new feature (Sketch files)</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=New Feature" do %><div class="price">Get a price</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-xs-12">
+    <div class="col-xs-12 collabholder">
       <h1>We have worked with</h1>
-      <p> C'est la</p>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/molotov-tv-en-direct-replay/id1053134780?mt=8", target: "_blank" do %><%= image_tag "collab_molotov.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/us/app/heetch/id693137280?mt=8", target: "_blank" do %><%= image_tag "collab_heetch.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/paypal/id283646709?mt=8", target: "_blank" do %><%= image_tag "collab_paypal.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/meetic-dating-ev%C3%A8nements/id416973595?mt=8", target: "_blank" do %><%= image_tag "collab_meetic.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/us/app/good-co-personality-test/id892559034?mt=8", target: "_blank" do %><%= image_tag "collab_goodco.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://www.starofservice.com/", target: "_blank" do %><%= image_tag "collab_SOS.jpg" %><% end %>
+      </span>
     </div>
     <div class="col-xs-12">
       <h1>What they say about us</h1>
@@ -149,18 +171,17 @@
     <div class="col-xs-12">
       <div class="recipes">
          <h1 id="recipes-title">Mobile Growth recipes</h1>
-            <% data.slides.each do |slide| %>
-              <% link_to slide.url, target: "_blank" do %>
-                <div class="square" style="background-image: url(images/slides/<%= slide.name %>.png)"></div>
-              <% end %>
+          <% data.slides.each do |slide| %>
+            <% link_to slide.url, target: "_blank" do %>
+              <div class="square" style="background-image: url(images/slides/<%= slide.name %>.png)"></div>
             <% end %>
-          </div>
-        </div>
-        </div>
+          <% end %>
       </div>
+    </div>
+  </div>
     <div class="col-xs-12">
       <h1>Join the community</h1>
-      <p> C'est la</p>
+      <p id="bottompage">Join our <% link_to "https://www.facebook.com/groups/195630784521931/", target: "_blank" do %>Facebook Community<% end %>, or reach to us directly at <% link_to "mailto:hello@mozza.io?subject=Hello Mozza!" do %>hello@mozza.io<% end %>!</p>
     </div>
 
 </div>

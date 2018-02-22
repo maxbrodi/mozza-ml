@@ -15,7 +15,7 @@ h1{
 
 .recipes{
   margin: auto;
-  width: 72%;
+  width: 85%;
 }
 
 .slideWrapper {
@@ -67,11 +67,21 @@ h1{
 //   z-index: -1;
 // }
 
+.servicesholder{
+  padding: 1em;
+}
+
 .service{
   background-color: #f7f7f7;
-  box-shadow: 2px 2px 20px 0px #e4e4e4c9;
+  box-shadow: 2px 2px 6px 0px #e4e4e4c9;
   border-radius: 7px;
   padding: 2em;
+  .servicelogo{
+    img{
+      width: 3em;
+      margin-bottom: 0.7em;
+    }
+  }
   .servicetitle{
     font-weight: 800;
     font-size: 1.1em;
@@ -85,8 +95,8 @@ h1{
     }
   }
   .serviceprice{
-    #price{
-      background-color: #2fcd70;
+    .price{
+      background-color: #2ECC71;
       padding: 9px 0px;
       border-radius: 7Px;
      color: white;
@@ -94,12 +104,26 @@ h1{
       margin-top: 1em;
       font-weight: 600;
       font-size: 1.1em;
+      :hover{
+        background-color: #1b9a51;
+      }
     }
-    #satisfied{
+    .satisfied{
       margin-bottom: -12px;
       margin-top: 7px;
       color: #cacaca;
     }
+  }
+}
+
+.collabholder{
+
+}
+
+.collab{
+  img{
+    width: 14%;
+    padding: 1em;
   }
 }
 
@@ -148,6 +172,9 @@ h1{
   margin-bottom: 1em;
 }
 
+#bottompage{
+  margin-bottom: 3em;
+}
 
 label{
   font-weight: normal;
@@ -161,6 +188,13 @@ label{
 
   .recipes{
     width: 100%;
+  }
+
+  .collab{
+    img{
+      width: 60%;
+      padding: 1em;
+    }
   }
 
   #explanation{
