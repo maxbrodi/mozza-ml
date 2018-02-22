@@ -1,6 +1,21 @@
-.slides{
-  padding-right: 26%;
-  margin-top: 3%;
+h1{
+  font-size: 2em;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.mainview{
+  text-align: center;
+}
+
+// .slides{
+//   padding-right: 26%;
+//   margin-top: 3%;
+// }
+
+.recipes{
+  margin: auto;
+  width: 85%;
 }
 
 .slideWrapper {
@@ -25,27 +40,91 @@
 .square{
   background-color: #e8e8e8;
   background-image: image-url('slides/zenly.png');
-  background-size: 218px;
-  padding: 109px;
+// FOR BIGGER SQUARES
+//  background-size: 218px;
+//  padding: 109px;
+//  margin-right: 18px;
+  background-size: 198px;
+  padding: 99px;
   display: inline-block;
-  margin-right: 18px;
+  margin-right: 20px;
   margin-bottom: 14px;
   border-radius: 11px;
 }
 
-canvas#particles {
-  width: 100vw;
-  display: block;
-  position: absolute;
-  top: 0;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  /* Use this if u don't play with z-index,
-   * so yo can click through the canvas.
-  pointer-events: none;
-  opacity: .75;
-  */
-  z-index: -1;
+// canvas#particles {
+//   width: 100vw;
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   /* Use this if u don't play with z-index,
+//    * so yo can click through the canvas.
+//   pointer-events: none;
+//   opacity: .75;
+//   */
+//   z-index: -1;
+// }
+
+.servicesholder{
+  padding: 1em;
+}
+
+.service{
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 6px 0px #e4e4e4c9;
+  border-radius: 7px;
+  padding: 2em;
+  .servicelogo{
+    img{
+      width: 3em;
+      margin-bottom: 0.7em;
+    }
+  }
+  .servicetitle{
+    font-weight: 800;
+    font-size: 1.1em;
+  }
+  .servicedelivery{
+    text-align: left;
+    padding-top: 2em;
+    .fa-check{
+      color: #8bd68b;
+      margin-right: 0.3em;
+    }
+  }
+  .serviceprice{
+    .price{
+      background-color: #2ECC71;
+      padding: 9px 0px;
+      border-radius: 7Px;
+     color: white;
+      margin-bottom: 0px;
+      margin-top: 1em;
+      font-weight: 600;
+      font-size: 1.1em;
+      :hover{
+        background-color: #1b9a51;
+      }
+    }
+    .satisfied{
+      margin-bottom: -12px;
+      margin-top: 7px;
+      color: #cacaca;
+    }
+  }
+}
+
+.collabholder{
+
+}
+
+.collab{
+  img{
+    width: 14%;
+    padding: 1em;
+  }
 }
 
 #newsletter{
@@ -57,7 +136,8 @@ canvas#particles {
 }
 
 #explanation{
-  margin-top: -9px;
+  margin: auto;
+  width: 72%;
 }
 
 #mc_embed_signup .mc-field-group input{
@@ -79,8 +159,22 @@ canvas#particles {
   font-weight: 400;
 }
 
+#headline{
+  font-size: 4em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+}
 
+#recipes-title{
+  margin-bottom: 1em;
+}
 
+#bottompage{
+  margin-bottom: 3em;
+}
 
 label{
   font-weight: normal;
@@ -90,5 +184,20 @@ label{
 @media screen and (max-width: 768px){
   .slides{
     padding-right: 0;
+  }
+
+  .recipes{
+    width: 100%;
+  }
+
+  .collab{
+    img{
+      width: 60%;
+      padding: 1em;
+    }
+  }
+
+  #explanation{
+    width: 100%;
   }
 }

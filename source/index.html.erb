@@ -1,50 +1,187 @@
-<canvas id="particles"></canvas>
+<!-- <canvas id="particles"></canvas> -->
 <div class="mainview">
   <div class="row">
     <div class="col-xs-12">
-      <h1>Mobile Growth Recipes</h1>
-      <p id="explanation"> How the best apps nailed it to unlock massive growth.</p>
+      <h1 id="headline">Make the right app</h1>
+    </div>
+    <div class="col-xs-12">
+      <h1>Mobile UX & Growth</h1>
+      <p id="explanation"> Mozza is a duo formed by a product designer, <% link_to "https://www.linkedin.com/in/maximebraud/", target: "_blank" do %>Maxime Braud<% end %>, and a growth marketer, <% link_to "https://www.linkedin.com/in/adrienmontcoudiol/", target: "_blank" do %>Adrien Montcoudiol<% end %>. We have been passionate about mobile applications and Italian food for a while. In 2016, we started Mozza to help promising startups improve their application and grow faster - from San Francisco to Paris.</p>
     </div>
   </div>
+    <div class="row">
+      <h1>Our services</h1>
+      <div class="servicesholder col-xs-12 col-md-4 ">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround.png" %></div>
+          <div class="servicetitle">Product & Growth Strategy</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Product & marketing analysis: review of screens, usability tests & metrics</p>
+            <p><i class="fas fa-check"></i>Recommendations on user experience</p>
+            <p><i class="fas fa-check"></i>Recommendations on growth marketing strategy</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=Product Growth Strategy" do %><div class="price">Start Now - 2900€</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
+        </div>
+      </div>
+      <div class="servicesholder col-xs-12 col-md-4">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround2.png" %></div>
+          <div class="servicetitle">Activation Boost</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Analysis of first user experience: review of screens, usability tests & metrics</p>
+            <p><i class="fas fa-check"></i>Redesign of first user experience: UX Sketch files</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=Activation Boost" do %><div class="price">Start Now - 3500€</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
+        </div>
+      </div>
+      <div class="servicesholder col-xs-12 col-md-4">
+        <div class="service">
+          <div class="servicelogo"><%= image_tag "mozzaround3.png" %></div>
+          <div class="servicetitle">New Feature Design</div>
+          <div class="servicedelivery">
+            <p><i class="fas fa-check"></i>Advice on the new feature implementation</p>
+            <p><i class="fas fa-check"></i>UX/UI design of the new feature (Sketch files)</p>
+          </div>
+          <div class="serviceprice">
+            <% link_to "mailto:hello@mozza.io?subject=New Feature" do %><div class="price">Get a price</div><% end %>
+            <p class="satisfied">Satisfied or money back</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 collabholder">
+      <h1>We have worked with</h1>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/molotov-tv-en-direct-replay/id1053134780?mt=8", target: "_blank" do %><%= image_tag "collab_molotov.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/us/app/heetch/id693137280?mt=8", target: "_blank" do %><%= image_tag "collab_heetch.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/paypal/id283646709?mt=8", target: "_blank" do %><%= image_tag "collab_paypal.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/fr/app/meetic-dating-ev%C3%A8nements/id416973595?mt=8", target: "_blank" do %><%= image_tag "collab_meetic.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://itunes.apple.com/us/app/good-co-personality-test/id892559034?mt=8", target: "_blank" do %><%= image_tag "collab_goodco.jpg" %><% end %>
+      </span>
+      <span class="collab">
+        <% link_to "https://www.starofservice.com/", target: "_blank" do %><%= image_tag "collab_SOS.jpg" %><% end %>
+      </span>
+    </div>
+    <div class="col-xs-12">
+      <h1>What they say about us</h1>
+      <div class="testimonial-holder">
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-right bubblegreen slideUp">
+            "The Mozza team is the right one to help you boost your growth."
+          </div>
+          <div class="author author-right">
+            <div class="testimonialgiver">
+              <div>Rhai Goburdhun</div>
+              <div class="position">CEO at Sounds (8M users)</div>
+            </div>
+            <div class="testimonialpic"><%= image_tag "rhai.jpg" %></div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-left bubblegrey">
+            "Regarding growth strategies of mobile apps, I think Adrien is among the best experts in Europe."
+          </div>
+          <div class="author author-left">
+            <div class="testimonialpic"><%= image_tag "alexandre.jpg" %></div>
+            <div class="testimonialgiver">
+              <div>Alexandre Jubien</div>
+              <div class="position">ex Head of mobile at Deezer</div>
+            </div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-right bubblegreen">
+            "Pretty impressed by Maxime’s ability to form a relevant product strategy out of some intuitions we had!"
+          </div>
+          <div class="author author-right">
+            <div class="testimonialgiver">
+              <div>Antoine Martin</div>
+              <div class="position">CEO Zenly (acquired by Snapchat)</div>
+            </div>
+            <div class="testimonialpic"><%= image_tag "antoine.jpg" %></div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-left bubblegrey slideUp">
+            "Mozza helps startups create kick-ass products and they do it right!"
+          </div>
+          <div class="author author-left">
+            <div class="testimonialpic"><%= image_tag "hamza.jpg" %></div>
+            <div class="testimonialgiver">
+              <div>Hamza Ouazzani Chahdi</div>
+              <div class="position">CEO at Spot Angels (YC)</div>
+            </div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-right bubblegreen">
+            "Adrien and Maxime form a growth/design duo of rare quality. I'd recommend them to any mobile startup willing to improve their product."
+          </div>
+          <div class="author author-right">
+          <div class="testimonialgiver">
+            <div>Kevin Kuipers</div>
+            <div class="position">Cofounder & Head of Product at Molotov.tv (3M users)</div>
+          </div>
+          <div class="testimonialpic"><%= image_tag "kevin.jpg" %></div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="bubble bubble-left bubblegrey">
+            "Adrien did a great job helping us define our product & growth strategy. Highly recommended!"
+          </div>
+          <div class="author author-left">
+            <div class="testimonialpic"><%= image_tag "paul.jpg" %></div>
+            <div class="testimonialgiver">
+              <div>Paul Duan</div>
+              <div class="position">President at Bayes Impact (YC)</div>
+            </div>
+          </div>
+        </div>
+        <!-- End of estimonial -->
+      </div>
+    </div>
   <div class="row allsquares">
     <div class="col-xs-12">
-      <% data.slides.each do |slide| %>
-        <% link_to slide.url, target: "_blank" do %>
-          <div class="square" style="background-image: url(images/slides/<%= slide.name %>.png)"></div>
-        <% end %>
-      <% end %>
+      <div class="recipes">
+         <h1 id="recipes-title">Mobile Growth recipes</h1>
+          <% data.slides.each do |slide| %>
+            <% link_to slide.url, target: "_blank" do %>
+              <div class="square" style="background-image: url(images/slides/<%= slide.name %>.png)"></div>
+            <% end %>
+          <% end %>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-6" id="newsletter">
-      <div id="wantmore"><h2>Want more?</h2> Receive our next growth recipes in your inbox:</div>
-              <!-- Begin MailChimp Signup Form -->
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
-      <div id="mc_embed_signup">
-      <form action="//mozza.us15.list-manage.com/subscribe/post?u=cd03ad533c579c21046ed08e7&amp;id=5fc59b0825" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-      <div class="mc-field-group">
-           <label for="mce-EMAIL">email</label>
-           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-      <div class="mc-field-group">
-           <label for="mce-FNAME">first name</label>
-           <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-      </div>
-           <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cd03ad533c579c21046ed08e7_5fc59b0825" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Mozza!" name="subscribe" id="getmozza" class="button"></div>
-          </div>
-      </form>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <div class="col-xs-12">
+      <h1>Join the community</h1>
+      <p id="bottompage">Join our <% link_to "https://www.facebook.com/groups/195630784521931/", target: "_blank" do %>Facebook Community<% end %>, or reach to us directly at <% link_to "mailto:hello@mozza.io?subject=Hello Mozza!" do %>hello@mozza.io<% end %>!</p>
     </div>
-  </div>
+
 </div>
