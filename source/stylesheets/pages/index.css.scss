@@ -1,3 +1,61 @@
+
+.container{
+	margin: 0;
+	width: 100%;
+}
+
+/* HERO */
+.logo{
+}
+.navlinks{
+	text-align: right;
+}
+.hero{
+	background-color: #d4d4d6;
+	height: 80vh;
+	.tagline{
+		margin-top: 27vh;
+		text-align: center;
+		padding: 0em 16em;
+	}
+}
+
+/* USE CASES */
+.usecases{
+	background-color: #e5e5e8;
+	.usecase-holder{
+		background-color: #939393;
+		padding: 3em;
+		margin: 4em;
+		border-radius: 6px;
+	}
+}
+
+/* CONTACT US */
+.contactus{
+	background-color: white;
+	padding: 4em 6em;
+	margin: 4em;
+}
+
+/* WE WORKED FOR */
+.workedfor{
+	background-color: white;
+}
+
+.collab-holder{
+	text-align: center;
+}
+
+.collab{
+	img{
+		width: 10%;
+		padding: 1em;
+	}
+}
+
+
+
 .testimonial-holder{
   margin: auto;
   width: 72%;
@@ -66,42 +124,12 @@
   margin-top: -17px;
 }
 
-#creds{
-  display: none;
-  margin-bottom: 30px;
-  text-decoration: none;
-  img{
-    width: 145px;
-    opacity: 1;
-    &:hover{
-      opacity: 0.6;
-    }
-  }
-  a{
-    text-decoration: none;
-  }
-}
+// FOOTER
 
-#founded{
-  margin-top: 3em;
-}
-
-
-@media screen and (max-width: 768px){
-  .testimonial-holder{
-  margin: auto;
-  width: 100%;
-  }
-  .testimonial{
-    margin-top: 7%;
-    .bubble{
-      padding: 5% 7%;
-    }
-    .bubble-right {
-      margin-left: 10%;
-    }
-    .bubble-left {
-      margin-right: 10%;
-    }
-  }
+.footer{
+	background-color: #e8e8e8;
+	padding: 6em;
+	.nextpage-title{
+		font-size: 2em;
+	}
 }
