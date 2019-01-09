@@ -24,3 +24,27 @@
 		border-radius: 6px;
 	}
 }
+
+.cook-photo img {
+	border-radius: 8px;
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+}
+
+.cooks-details {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.cook {
+	text-align: center;
+	max-width: 400px;
+	margin-bottom: 24px;
+}
