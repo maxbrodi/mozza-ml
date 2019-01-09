@@ -1,0 +1,26 @@
+.logo{
+
+}
+.navlinks{
+	text-align: right;
+}
+
+.hero{
+	background-color: #d4d4d6;
+	height: 80vh;
+	.tagline{
+		margin-top: 27vh;
+		text-align: center;
+		padding: 0em 16em;
+	}
+}
+
+.usecases{
+	background-color: #e5e5e8;
+	.usecase-holder{
+		background-color: #939393;
+		padding: 3em;
+		margin: 4em;
+		border-radius: 6px;
+	}
+}
