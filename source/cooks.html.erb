@@ -13,63 +13,48 @@
         <div class="col-xs-12 tagline">
             <h1>The Cooks</h1>
             <p>
-                We are a team of 5 senior product people with experience in successful startups.
-                Enjoy our work? Become a Mozzayolo
+              Our team is made of passionate product people from the best tech companies.
             </p>
         </div>
     </div>
 </div>
+
 <!-- COOKS -->
 <div class="container">
-    <div class="row cooks-details">
-        <div class="cook col-xs-12 col-md-6">
-            <div class="cook-photo">
-                <img src="images/michel.jpg" />
-            </div>
-            <div class="cook-name">
-                <h2>Michel</h2>
-            </div>
-            <div class="cook-description">
-                <p>Une sacrée expérience dans tout ce qui est meufs, alcool, drogue et digital nomadisme</p>
-            </div>
-        </div>
+  <div class="row cooks-details">
+    <% data.mozzayolos.each do |yolo| %>
+      <div class="cook col-xs-12 col-md-6">
+          <div class="cook-photo">
+            <%= image_tag "mozzayolos/" + yolo.pic %>
+          </div>
+          <div class="cook-name">
+              <h2><%= yolo.name %></h2>
+          </div>
+          <div class="cook-pastexperiences">
+              <p><%= yolo.experience %></p>
+          </div>
+          <div class="cook-expertise">
+              <p><%= yolo.expertise %></p>
+          </div>
+          <div class="cook-alsofounder">
+              <p><%= yolo.alsofounder %></p>
+          </div>
+      </div>
+    <% end %>
+  </div>
 
-        <div class="cook col-xs-12 col-md-6">
-            <div class="cook-photo">
-                <img src="images/michel.jpg" />
-            </div>
-            <div class="cook-name">
-                <h2>Michel</h2>
-            </div>
-            <div class="cook-description">
-                <p>Une sacrée expérience dans tout ce qui est meufs, alcool, drogue et digital nomadisme</p>
-            </div>
-        </div>
+<!-- CTAs -->
+  <div class="row">
+    <div class="col-xs-12">
+      Our cooks are available for you.
+      <a class="typeform-share link" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact us now!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      <div class="col-xs-12">
+        <p>Want to join the crew? Reach us at cooks@mozza.io</p>
     </div>
+  </div>
 
-    <div class="row cooks-details">
-        <div class="cook col-xs-12 col-md-6">
-            <div class="cook-photo">
-                <img src="images/michel.jpg" />
-            </div>
-            <div class="cook-name">
-                <h2>Michel</h2>
-            </div>
-            <div class="cook-description">
-                <p>Une sacrée expérience dans tout ce qui est meufs, alcool, drogue et digital nomadisme</p>
-            </div>
-        </div>
 
-        <div class="cook col-xs-12 col-md-6">
-            <div class="cook-photo">
-                <img src="images/michel.jpg" />
-            </div>
-            <div class="cook-name">
-                <h2>Michel</h2>
-            </div>
-            <div class="cook-description">
-                <p>Une sacrée expérience dans tout ce qui est meufs, alcool, drogue et digital nomadisme</p>
-            </div>
-        </div>
-    </div>
+
+
+
 </div>

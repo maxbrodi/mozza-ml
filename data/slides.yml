@@ -1,18 +1,41 @@
-- name: earlysnapchat
+- name: "Growth Lessons from Early Snapchat"
+  img: earlysnapchat
+  text: "Why starting with a simple and radical product is the first step to success"
   url: "https://fr.slideshare.net/mozza_io/growth-lessons-from-early-snapchat"
-- name: apppages
-  url: "http://www.pages.xyz/type/app"
-- name: gamification
+- name: "Mobile Gamification"
+  img: gamification
+  text: "How the best apps gamify their product to boost user growth"
   url: "https://fr.slideshare.net/mozza_io/mobile-gamification-how-the-best-apps-nailed-it-waze-duolingo-tinder-snapchat-linkedin-zenly"
-- name: houseparty
-  url: "https://fr.slideshare.net/mozza_io/houseparty-the-golden-minute-mobile-growth-analysis"
-- name: zenly
+- name: "How Zenly nailed it"
+  img: zenly
+  text: "What product method did Zenly use to become the only location sharing app with a 8% weekly growth rate? (and get eventually acquired by Snapchat!)"
   url: "https://fr.slideshare.net/MaximeBraud/how-zenly-nailed-it-product-analysis"
-- name: mobilestrategy
+- name: "How to growth hack your mobile app user base"
+  img: growthtribe
+  text: "by Adrien Montcoudiol at Growth Tribe"
+  url: https://www.youtube.com/watch?v=f3jLWxbVJOY
+- name: "Road to a great product"
+  img: roadwagon
+  text: 'by Maxime Braud at LeWagon 🇫🇷'
+  url: https://www.youtube.com/watch?v=zik48bQhzmI
+- name: "Organic growth: How to acquire 1M users with zero marketing?"
+  img: stationf
+  text: "by Adrien Montcoudiol at Station F 🇫🇷"
+  url: "https://www.youtube.com/watch?v=xXIPzhAFTlE"
+- name: "Mobile Growth: strategies, tools and tactics"
+  img: mobilestrategy
+  text: "An overview of the industry’s best practices (75k+ views, 2014)"
   url: "https://fr.slideshare.net/amontcoudiol/mobile-growth-best-strategies-tools-and-tactics"
-- name: roadtogreat
+- name: "Road to a Great Product: methods, tools and hacks"
+  img: roadtogreat
+  text: "Learn how to evaluate your features, make them better, prototype, test with real users and roll out your new service (100k+ views, 2016)"
   url: "https://fr.slideshare.net/MaximeBraud/road-to-a-great-product-methods-tools-and-hacks"
-- name: growthmarketing
-  url: "https://fr.slideshare.net/amontcoudiol/mobile-growth-marketing-strategy-hacks-tools"
-# - name: 12 Mobile Growth
-#   id: BQKDuHG1Nbcdre
+- name: "Houseparty: The Golden Minute"
+  img: houseparty
+  text: "One of the most powerful activation process to inspire from"
+  url: "https://fr.slideshare.net/mozza_io/houseparty-the-golden-minute-mobile-growth-analysis"
+- name: "12 growth tactics for mobile apps"
+  img: thefamily
+  text: "by Adrien Montcoudiol at TheFamily  🇫🇷"
+  url: "https://www.youtube.com/watch?v=pliS5GuB8Wc"
+

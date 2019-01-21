@@ -1,0 +1,21 @@
+- name: Adrien Montcoudiol
+  pic: adri.jpeg
+  experience: ex Head of Growth at Molotov.tv (7M users)
+  expertise: Startup mentor at Google Launchpad, The Refiners, The Family
+  alsofounder: Also founder of Agapë, an arts & music festival
+- name: Maxime Braud
+  pic: max.png
+  experience: ex Product Manager at Paypal & Molotov.tv
+  expertise: Product expert at LeWagon
+  alsofounder: Also founder of a big Youtube channel on French rap
+- name: Lucas Didier
+  pic: lucas.jpg
+  experience: ex Product Manager at Payfit & Blablacar
+  expertise: Product teacher at HEC Paris
+  alsofounder: Also founder of Ballistic, a football statistic company
+- name: Mathieu Grac
+  pic: mathieu.jpg
+  experience: ex UX/UI designer at Blablacar & Molotov.tv
+  expertise:
+  alsofounder: Also founder of Azulejos, a repository of Lisbon ceramic tilework
+
