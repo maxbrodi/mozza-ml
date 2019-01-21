@@ -5,15 +5,34 @@
 			Mozza
 		</div>
 		<div class="navlinks col-xs-6">
+			<%= link_to 'Home', '/' %>
+			<%= link_to 'Cooks', '/cooks.html' %>
+			<%= link_to 'Recipes', '/recipes.html' %>
+			 <a class="typeform-share link" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact Us</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 		</div>
 		<div class="col-xs-12 tagline">
-			<h1>Your Product Team, on a Plate</h1>
-			<p>Mozza is a group of senior product managers and UX/UI designers who help promising startups craft amazing apps and improve their metrics.</p>
+			<h1>Your Product Team, on a plate</h1>
+			<p>Mozza is a group of senior product strategists and UX/UI designers who help promising startups craft amazing apps and improve their metrics. 🔥</p>
 		</div>
 	</div>
 </div>
 
+<!-- CUSTOMERS -->
+<div class="col-xs-12">
+	<h2>We have worked with them</h2>
+</div>
+<div class="col-xs-12 collab-holder">
+	<% data.collabs.each do |collab| %>
+    <span class="collab">
+      <%= image_tag "collabs/" + collab.pic %>
+      <h3><%= collab.name %></h3>
+      <p><%= collab.description %></p>
+    </span>
+  <% end %>
+</div>
+
 <!-- USE CASES -->
+<!-- J'ai pas fait de YAML parce quon en avait que 3 ca changeait pas grand chose -->
 <div class="container usecases">
 	<div class="row">
 		<div class="col-xs-12">
@@ -25,14 +44,41 @@
 				Image
 				</div>
 				<div class="usecase-desc">
-					<h3>UX & Metrics Audit</h3>
-					<p>A team of 2 Mozzayolos (1 Product manager & 1 UI/UX Designer) created a travel lottery app from scratch for a French entrepreneur, from strategy/ideation to a high-fidelity prototype with a neat user interface. The project will be live in the first half of 2019.</p>
+					<h3>Product & Growth Strategy</h3>
+					<p>We helped the leading ridesharing app Heetch tackle a major product challenge.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="usecase-holder">
+				<div class="usecase-img">
+				Image
+				</div>
+				<div class="usecase-desc">
+					<h3>Product Design from scratch</h3>
+					<p>Nothing worse than wasting time and money developping the wrong product.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="usecase-holder">
+				<div class="usecase-img">
+				Image
+				</div>
+				<div class="usecase-desc">
+					<h3>UX & Analytics Audit</h3>
+					<p>The San Francisco-based startup Sift was struggling with retention.</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-12">
 			<div class="contactus">
-				Feel hungry? We can cook for you the same way. Contact us.
+				<h2>
+					Feel hungry?
+				</h2>
+				<p>
+					Get in touch with us at hello@mozza.io
+				</p>
 			</div>
 		</div>
 	</div>
@@ -41,142 +87,56 @@
 <!-- WE WORKED FOR -->
 <div class="container workedfor">
 	<div class="row">
-		<div class="col-xs-12">
-			<h2>We have worked with them</h2>
-		</div>
-		<div class="collab-holder">
-      <span class="collab">
-        <% link_to "https://itunes.apple.com/fr/app/molotov-tv-en-direct-replay/id1053134780?mt=8", target: "_blank" do %><%= image_tag "collab_molotov.jpg" %><% end %>
-      </span>
-      <span class="collab">
-        <% link_to "https://itunes.apple.com/us/app/heetch/id693137280?mt=8", target: "_blank" do %><%= image_tag "collab_heetch.jpg" %><% end %>
-      </span>
-      <span class="collab">
-        <% link_to "https://itunes.apple.com/fr/app/paypal/id283646709?mt=8", target: "_blank" do %><%= image_tag "collab_paypal.jpg" %><% end %>
-      </span>
-      <span class="collab">
-        <% link_to "https://itunes.apple.com/fr/app/meetic-dating-ev%C3%A8nements/id416973595?mt=8", target: "_blank" do %><%= image_tag "collab_meetic.jpg" %><% end %>
-      </span>
-      <span class="collab">
-        <% link_to "https://itunes.apple.com/us/app/good-co-personality-test/id892559034?mt=8", target: "_blank" do %><%= image_tag "collab_goodco.jpg" %><% end %>
-      </span>
-      <span class="collab">
-        <% link_to "https://www.starofservice.com/", target: "_blank" do %><%= image_tag "collab_SOS.jpg" %><% end %>
-      </span>
-		</div>
-
 		<div class="testimonial-holder">
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-right bubblegreen slideUp">
-		      "The Mozza team is the right one to help you boost your growth."
-		    </div>
-		    <div class="author author-right">
-		      <div class="testimonialgiver">
-		        <div>Rhai Goburdhun</div>
-		        <div class="position">CEO at Sounds (8M users)</div>
-		      </div>
-		      <div class="testimonialpic"><%= image_tag "rhai.jpg" %></div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-left bubblegrey">
-		      "Regarding growth strategies of mobile apps, I think Adrien is among the best experts in Europe."
-		    </div>
-		    <div class="author author-left">
-		      <div class="testimonialpic"><%= image_tag "alexandre.jpg" %></div>
-		      <div class="testimonialgiver">
-		        <div>Alexandre Jubien</div>
-		        <div class="position">ex Head of mobile at Deezer</div>
-		      </div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-right bubblegreen">
-		      "Pretty impressed by Maxime’s ability to form a relevant product strategy out of some intuitions we had!"
-		    </div>
-		    <div class="author author-right">
-		      <div class="testimonialgiver">
-		        <div>Antoine Martin</div>
-		        <div class="position">CEO Zenly (acquired by Snapchat)</div>
-		      </div>
-		      <div class="testimonialpic"><%= image_tag "antoine.jpg" %></div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-left bubblegrey slideUp">
-		      "Mozza helps startups create kick-ass products and they do it right!"
-		    </div>
-		    <div class="author author-left">
-		      <div class="testimonialpic"><%= image_tag "hamza.jpg" %></div>
-		      <div class="testimonialgiver">
-		        <div>Hamza Ouazzani Chahdi</div>
-		        <div class="position">CEO at Spot Angels (YC)</div>
-		      </div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-right bubblegreen">
-		      "Adrien and Maxime form a growth/design duo of rare quality. I'd recommend them to any mobile startup willing to improve their product."
-		    </div>
-		    <div class="author author-right">
-		    <div class="testimonialgiver">
-		      <div>Kevin Kuipers</div>
-		      <div class="position">Cofounder & Head of Product at Molotov.tv (3M users)</div>
-		    </div>
-		    <div class="testimonialpic"><%= image_tag "kevin.jpg" %></div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-
-		  <!-- Testimonial -->
-		  <div class="testimonial">
-		    <div class="bubble bubble-left bubblegrey">
-		      "Adrien did a great job helping us define our product & growth strategy. Highly recommended!"
-		    </div>
-		    <div class="author author-left">
-		      <div class="testimonialpic"><%= image_tag "paul.jpg" %></div>
-		      <div class="testimonialgiver">
-		        <div>Paul Duan</div>
-		        <div class="position">President at Bayes Impact (YC)</div>
-		      </div>
-		    </div>
-		  </div>
-		  <!-- End of estimonial -->
-	  </div>
-  </div>
-
-</div>
-
-
-<!-- FOOTER -->
-
-<div class="container footer">
-	<div class="row">
-		<div class="col-md-6 col-xs-12">
-			<div class="nextpage-title">
-				COOKS
-			</div>
-			<div class="nextpage-desc">
-				We are a small team of experienced product people.
-			</div>
-		</div>
-		<div class="col-md-6 col-xs-12">
-			<div class="nextpage-title">
-				RECIPES
-			</div>
-			<div class="nextpage-desc">
-				Get inspired from the secret sauce that made us famous.
-			</div>
+			<% data.testimonials.each do |testi| %>
+			  <!-- Testimonial -->
+			  <div class="testimonial">
+			    <div class="bubble bubble-right bubblegreen slideUp">
+			      <%= testi.quote %>
+			    </div>
+			    <div class="author author-right">
+			      <div class="testimonialgiver">
+			        <div><%= testi.name %></div>
+			        <div class="position"><%= testi.position %></div>
+			      </div>
+			      <div class="testimonialpic"><%= image_tag "testimonials/" + testi.pic %></div>
+			    </div>
+			  </div>
+			  <!-- End of estimonial -->
+			<% end %>>
 		</div>
 	</div>
 </div>
+
+<!-- NEWSLETTER -->
+
+<div class="container newsletter">
+	<div class="row">
+		<div class="col-md-6 col-xs-12">
+				<h1>Mozza</h1>
+				<p>Get our freshest recipes</p>
+		</div>
+		<div class="col-md-6 col-xs-12">
+				Mailchimp integration
+		</div>
+	</div>
+</div>
+
+<!-- FOOTER -->
+
+
+<div class="container footer">
+	<div class="row">
+		<div class="col-xs-12">
+			<%= link_to 'Home', '/' %>
+			<%= link_to 'Cooks', '/cooks.html' %>
+			<%= link_to 'Recipes', '/recipes.html' %>
+			hello@mozza.io
+		</div>
+		<div class="col-xs-12">
+			Copyright 2019 • Paris
+		</div>
+	</div>
+</div>
+
+
