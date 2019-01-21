@@ -11,8 +11,8 @@
        <a class="typeform-share link" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact Us</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     </div>
     <div class="col-xs-12 tagline">
-      <h1>Recipes</h1>
-      <p>Our Product specialties</p>
+      <h1>The Recipes</h1>
+      <p>Sharing is caring. On a regular basis, we create content to spread the best practices in terms of product design and growth strategy, especially for mobile apps.</p>
     </div>
   </div>
 </div>
@@ -21,6 +21,18 @@
 <!-- RECIPES -->
 <div class="container recipes">
   <div class="row">
-    yo
+    <% data.slides.each do |recipe| %>
+      <div class="col-xs-3 recipe">
+        <% link_to recipe.url, target: "_blank" do %>
+          <div class="recipepic">
+            <%= image_tag "slides/" + recipe.img + ".png" %>
+          </div>
+        <% end %>
+        <div class="recipetext">
+            <h3><%= recipe.name %></h2>
+            <p><%= recipe.text %></p>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
